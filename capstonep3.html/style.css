@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: black;
+}
+.img-container{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:95vh;
+    padding: 0 8%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(IN-en-20230724-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 50px 0 50px;
+}
+.navbar .left{
+    width: 150px;
+    cursor: pointer;
+}
+.language-btn{
+    background-color: transparent;
+    color: rgb(255,255,255);
+    padding: 7px 20px;
+    border-radius: 0.25rem;
+    border: 1px solid #484747;
+    outline: 0;
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+.signIn-btn{
+    background-color: rgb(229,9,20);
+    border-radius: 0.25rem;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 7px 20px;  
+}
+.signIn-btn a{
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.header-content h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.header-form p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 30px;
+}
+.header-form{
+    padding: 0 20px 0 20px;
+    
+}
+.header-form form{
+    padding-top: 15px;
+    width: 100%;
+    
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+.header-form input{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+   
+}
+.header-form button{
+    padding: 15px 30px;
+    background-color: rgb(229,9,20);
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
+    color: white;
+    font-weight: 800;
+    border: 0;
+    outline: 0;
+}
+.features{
+    justify-content: center;
+    padding: 50px 10%;
+ 
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.row-text{
+    flex-basis: 50%;
+}
+.row-img{
+    flex-basis: 50%;
+}
+.row-text h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.row-text p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px 0;
+}
+.row-img img{
+    width: 100%;
+    border: 0;
+    flex-basis: 50%;
+}
+hr{
+    border: 5px solid rgb(34, 33, 33);
+}
+.faq{
+    padding: 20px 10%;
+    text-align: center;
+}
+.faq-box{
+    margin-bottom: 50px;
+}
+.faq-box h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.accordian{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+.accordian .question:hover{
+    background-color: rgb(62, 62, 62);
+}
+.accordian .question{
+    background-color:rgb(43, 42, 42) ;
+    padding: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.question::after{
+    content: '+';
+    font-size: 40px;
+    position: absolute;
+    right: 200px;
+    align-items: center;
+}
+.accordian .answer p{
+    /* display: none; */
+    background-color: rgb(32, 31, 31);
+    /* margin: 1px 0; */
+    border: 1px solid #000;
+    padding: 25px;
+}
+.accordian .answer{
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: max-height .3s ease-in-out;
+}
+.list.active .answer {
+    max-height: 300px;
+    /* overflow: visible; */
+}
+.faq-content{
+    /* width: 60%; */
+    /* margin-top: 100px; */
+    text-align: center;
+    padding-top: 30px;
+}
+.footer{
+    padding: 40px 0;
+    margin: 0 12%;
+    color: rgb(167, 166, 166);
+}
+.footer h4{
+    margin: 10px 0;
+    padding: 0.75rem 0;
+}
+.list-content{
+    padding: 10px 0;
+    font-size: 0.85rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+}
+.grid-item{
+    margin-bottom: 10px;
+    text-decoration: underline;
+    
+}
+.footer-lang{
+    padding: 10px 0;
+}
+.footer p{
+    padding: 10px 0;
+}
